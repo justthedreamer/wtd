@@ -1,0 +1,591 @@
+:root {
+	--primary-color: #eee;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+	overflow-y: overlay;
+}
+h1,
+h2,
+h3 {
+	color: black;
+	font-weight: 600;
+}
+h1 {
+	font-size: 24px;
+	font-weight: 700;
+}
+p {
+	color: rgb(238, 238, 238);
+}
+
+header {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../images/headerpic.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+header nav {
+	width: 100%;
+	font-size: 0;
+}
+header nav a {
+	display: inline-block;
+	background-color: rgba(99, 99, 99, 0.4);
+	font-size: 16px;
+	width: 50%;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	text-transform: uppercase;
+	text-align: center;
+}
+header nav a:nth-of-type(1) {
+	color: deepskyblue;
+}
+header div.headerContent {
+	position: absolute;
+	top: 55%;
+	left: 0;
+	padding: 0 20px;
+	transform: translate(0, -50%);
+	max-width: 600px;
+}
+header div.headerContent button {
+	position: absolute;
+	width: 50%;
+	height: 50px;
+	margin-top: 20px;
+	left: 0;
+	transform: translate(20%, 50%);
+	border: none;
+	background-color: #222;
+	color: #eee;
+}
+header div.headerContent button a {
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	line-height: 50px;
+	font-size: 16px;
+	color: #eee;
+}
+
+section.about-us {
+	width: 100%;
+	background-color: var(--primary-color);
+	text-align: center;
+	padding: 20px 50px;
+}
+section.about-us div.content h2 {
+	margin-bottom: 20px;
+}
+section.about-us div.content p {
+	color: black;
+	margin-bottom: 20px;
+}
+section.about-us div.content img {
+	height: 50px;
+}
+
+section.work {
+	width: 100%;
+}
+section.work div.skills {
+	background-color: #444;
+	width: 100%;
+}
+section.work div.professional-skills {
+	text-align: center;
+}
+section.work div.professional-skills h2 {
+	padding: 20px 0;
+	color: rgb(228, 222, 222);
+}
+section.work div.professional-skills h3 {
+	margin-top: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	color: white;
+}
+section.work div.progress-bar-bg {
+	height: 5px;
+	width: 80%;
+	background-color: #aaa;
+	margin: 5px auto;
+	border-radius: 30px;
+}
+
+section.work div.progress-bar-bg div.progress-bar-value {
+	height: 100%;
+	background-color: deepskyblue;
+	border-radius: 30px;
+}
+section.work div.progress-bar-bg:nth-of-type(1) div.progress-bar-value {
+	width: 75%;
+}
+section.work div.progress-bar-bg:nth-of-type(2) div.progress-bar-value {
+	width: 90%;
+}
+section.work div.progress-bar-bg:nth-of-type(3) div.progress-bar-value {
+	width: 65%;
+}
+
+section.work div.professional-skills .deepblue {
+	color: deepskyblue;
+	font-weight: 600;
+}
+section.work div.work-images {
+	padding: 10px 0;
+}
+section.work div.work-images div.items {
+	text-align: center;
+	padding: 10px;
+}
+section.work div.work-images div.items img {
+	width: 64px;
+	margin: 10px 40px;
+}
+section.work div.work-theme {
+	padding: 10px 0;
+	padding-bottom: 20px;
+	text-align: center;
+
+	background-color: var(--primary-color);
+}
+section.work div.work-theme img {
+	padding: 10px 0;
+}
+section.work div.work-theme ul li {
+	padding: 10px;
+}
+section.work div.work-theme ul li p {
+	color: black;
+}
+
+/* Gallery */
+section.work div.work-images-gallery {
+	width: 100%;
+	font-size: 0;
+}
+
+section.work div.work-images-gallery div.work-img {
+	display: inline-block;
+	width: 50%;
+	overflow: auto;
+}
+
+section.work div.work-images-gallery div.work-img img {
+	display: block;
+	width: 100%;
+}
+
+section.work div.work-images-gallery svg {
+	display: none;
+}
+
+/* Processes */
+section.procesess {
+	background-color: #333;
+	text-align: center;
+	padding: 20px 0;
+}
+section.procesess h2 {
+	padding: 10px;
+	color: white;
+}
+section.procesess p {
+	padding: 20px;
+	font-weight: 300;
+}
+section.procesess video {
+	width: 90%;
+	margin: 20px 0;
+}
+
+section.services {
+	background-color: var(--primary-color);
+}
+section.services div.services-items {
+	padding: 50px 0;
+}
+section.services div.services-items div.item {
+	text-align: center;
+	padding: 20px;
+}
+section.services div.services-items div.item img {
+	display: block;
+	margin: 0 auto;
+}
+section.services div.services-items div.item span {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: deepskyblue;
+	padding: 15px 0;
+}
+section.services div.services-items div.item p {
+	color: black;
+}
+section.services div.services-motto {
+	background-color: rgb(10, 102, 133);
+	padding: 40px;
+	text-align: center;
+}
+section.services div.services-motto span {
+	display: inline-block;
+	width: 100%;
+	text-transform: uppercase;
+	padding: 10px;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+section.contact {
+	background-color: var(--);
+	text-align: center;
+}
+section.contact div.visiteus-item {
+	display: inline-block;
+	text-align: center;
+	width: 50%;
+	padding: 10px 0;
+}
+section.contact h2 {
+	padding: 20px 0 10px 0;
+}
+section.contact div.visiteus-item img {
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+	section.contact div.visiteus-item {
+		width: 20%;
+	}
+}
+
+section.contact div.form {
+	background-color: #666;
+}
+
+section.contact div.form div form .input-box {
+	width: 100%;
+}
+section.contact div.form div form .input-box input {
+	display: inline-block;
+	width: 80%;
+	height: 40px;
+	margin: 5px 0;
+	border-radius: 10px;
+	padding: 10px;
+	border: none;
+}
+section.contact div.form div form .input-box textarea {
+	width: 80%;
+	height: 150px;
+	border-radius: 10px;
+	padding: 10px;
+	border: none;
+}
+section.contact div.form button {
+	background-image: linear-gradient(to right, #3f8ec2 0%, #3f2a8d 51%, #276d9b 100%);
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	border-radius: 10px;
+}
+section.contact div.form button:active {
+	text-decoration: underline;
+}
+section.contact div.form div.form-succes {
+	display: none;
+	background-color: green;
+	position: fixed;
+	bottom: -10%;
+	left: 0;
+	width: 100%;
+	transition: 0.2s;
+	transition-timing-function: cubic-bezier(1, 0, 1, -0.68);
+}
+
+footer {
+	background-color: #333;
+}
+
+footer div.author {
+	padding: 20px;
+}
+footer div.author h3 {
+	padding: 10px 0;
+	color: white;
+}
+footer div.author p {
+	color: white;
+	font-size: 0.8em;
+}
+footer div.author p:nth-of-type(2) {
+	padding-bottom: 15px;
+}
+footer div.links {
+	width: 100%;
+	padding: 20px;
+}
+footer div.links div {
+	display: inline-block;
+	width: 30%;
+}
+footer div.links div a {
+	display: inline-block;
+	width: 100%;
+	padding: 15px 20px;
+	padding-left: 0;
+	text-decoration: underline;
+	text-decoration-color: deepskyblue;
+	color: white;
+	text-align: left;
+}
+
+div.hamburger {
+	position: fixed;
+	top: 10px;
+	left: 20px;
+}
+div.click {
+	display: none;
+}
+
+@media (orientation: landscape) AND (min-width: 1024px) {
+	h1 {
+		font-size: 52px;
+		font-weight: 700;
+	}
+	p {
+		color: rgb(238, 238, 238);
+		font-size: 24px;
+	}
+
+	header nav a {
+		width: calc(100vw / 6);
+		background-color: rgba(55, 55, 55, 0.8);
+		padding: 20px 0;
+		transition: 0.3s linear;
+	}
+	header nav a:hover {
+		background-color: rgba(22, 22, 22, 1);
+	}
+	header div.headerContent {
+		left: 50px;
+	}
+	header div.headerContent button {
+		transition: 0.5s;
+		border-radius: 10px;
+		border: 1px solid #333;
+	}
+	header div.headerContent button:hover {
+		background-color: #111;
+		border-radius: 20px;
+		border: 1px solid #aaa;
+	}
+	section.about-us {
+		padding: 150px;
+	}
+	section.work div.skills {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+	}
+	section.work div.skills div.professional-skills {
+		order: 1;
+		width: 50%;
+	}
+	section.work div.skills div.work-images {
+		order: 1;
+		width: 50%;
+	}
+	section.work div.skills div.work-images div.items {
+		position: relative;
+		height: 25vh;
+		overflow: hidden;
+	}
+	section.work div.skills div.work-images img {
+		position: absolute;
+		top: 20%;
+		right: -50%;
+		width: auto;
+		transition: 0.8s;
+	}
+	section.work div.skills:hover div.work-images div.items:nth-of-type(1) img:nth-of-type(1) {
+		right: 60%;
+	}
+	section.work div.skills:hover div.work-images div.items:nth-of-type(1) img:nth-of-type(2) {
+		right: 20%;
+	}
+	section.work div.skills:hover div.work-images div.items:nth-of-type(2) img:nth-of-type(1) {
+		right: 60%;
+	}
+	section.work div.skills:hover div.work-images div.items:nth-of-type(2) img:nth-of-type(2) {
+		right: 20%;
+	}
+	section.work div.skills div.professional-skills div.content {
+		padding: 50px;
+		padding-top: 100px;
+		height: 50vh;
+		text-align: left;
+	}
+	section.work div.skills div.professional-skills div.content h2 {
+		font-size: 42px;
+	}
+	section.work div.skills div.professional-skills div.content h3 {
+		text-align: left;
+	}
+	section.work div.skills div.professional-skills div.content div.progress-bar-bg {
+		margin: 20px 0;
+	}
+	section.work div.skills div.professional-skills div.content div.progress-bar-value {
+		width: 0;
+		transition: 1s;
+	}
+	section.work
+		div.skills:hover
+		div.professional-skills
+		div.content
+		div.progress-bar-bg:nth-of-type(1)
+		div.progress-bar-value {
+		width: 75%;
+		transition: 1.3s;
+	}
+	section.work
+		div.skills:hover
+		div.professional-skills
+		div.content
+		div.progress-bar-bg:nth-of-type(2)
+		div.progress-bar-value {
+		width: 90%;
+		transition: 1.5s;
+	}
+	section.work
+		div.skills:hover
+		div.professional-skills
+		div.content
+		div.progress-bar-bg:nth-of-type(3)
+		div.progress-bar-value {
+		width: 65%;
+		transition: 1.2s;
+	}
+	section.work div.work-theme {
+		padding: 100px 0;
+	}
+	section.work div.work-theme ul li {
+		display: inline-block;
+		width: calc(100vw / 5);
+	}
+
+	section.work div.work-images-gallery div.work-img {
+		position: relative;
+		width: 25%;
+	}
+	section.work div.work-images-gallery div.work-img-onclick {
+		background-color: transparent;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: 0.5s;
+		cursor: pointer;
+	}
+	section.work div.work-images-gallery svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: block;
+		height: 20%;
+		transform: translate(-50%, -50%);
+		fill: transparent;
+		transition: 0.3s;
+	}
+	section.work div.work-images-gallery div.work-img:hover svg {
+		fill: white;
+	}
+	section.work div.work-images-gallery div.work-img:hover div.work-img-onclick {
+		background-color: #222;
+		opacity: 0.7;
+	}
+	section.services {
+	}
+	section.services div {
+		font-size: 0;
+		margin-bottom: 70px;
+	}
+	section.services div div.item {
+		width: 25%;
+		display: inline-block;
+	}
+	section.services div div.item span {
+		font-size: 22px;
+	}
+	section.services div.services-motto {
+		position: relative;
+		padding: 15vh 100px;
+		margin: 0;
+		overflow: hidden;
+	}
+	section.services div.services-motto p {
+		color: transparent;
+		transition: 0.5s;
+	}
+
+	section.services div.services-motto p:nth-of-type(2) {
+		position: absolute;
+		bottom: -10%;
+		left: 50%;
+		transform: translate(-50%, 0);
+
+		font-size: 0;
+	}
+	section.services div.services-motto:hover p {
+		color: var(--primary-color);
+	}
+	section.services div.services-motto:hover p:nth-of-type(2) {
+		font-size: 24px;
+		bottom: 10%;
+	}
+
+	section.contact {
+		font-size: 0;
+	}
+	section.contact h2 {
+		display: inline-block;
+		width: 100%;
+		padding: 50px 0 100px 0;
+		font-size: 32px;
+	}
+	section.contact div.visiteus-item {
+		display: inline-block;
+		width: 20%;
+		height: 200px;
+	}
+	section.contact div.visiteus-item span {
+		font-size: 18px;
+	}
+}
