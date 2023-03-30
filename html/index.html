@@ -54,7 +54,7 @@
 
 
 
-            
+
             <div class="professional-skills">
                 <div class="content">
                     <h2>Professional Skills</h2>
@@ -353,10 +353,7 @@
             <div class="form-succes">
                 <p>Success! Your message has been send. </p>
             </div>
-
         </div>
-
-
     </section>
     <!-- Contact -->
 
@@ -402,6 +399,17 @@
     </div>
 
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $("section.contact div.form button").click(function () {
+            $("section.contact div.form div.form-succes").toggleClass('animation')
+
+            setTimeout(function () {
+                $("section.contact div.form div.form-succes").removeClass('animation')
+            }, 2500)
+        })
+    </script>
 
 
 
