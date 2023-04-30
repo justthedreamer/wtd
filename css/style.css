@@ -202,7 +202,7 @@ section.work div.work-images-gallery svg {
 section.procesess {
 	background-color: #333;
 	text-align: center;
-	padding: 20px 0;
+	padding: calc(20px + 5vh) 0;
 }
 section.procesess h2 {
 	padding: 10px;
@@ -213,7 +213,7 @@ section.procesess p {
 	font-weight: 300;
 }
 section.procesess video {
-	width: 90%;
+	height: 50vh;
 	margin: 20px 0;
 }
 
@@ -221,7 +221,7 @@ section.services {
 	background-color: var(--primary-color);
 }
 section.services div.services-items {
-	padding: 50px 0;
+	padding: 100px 0;
 }
 section.services div.services-items div.item {
 	text-align: center;
@@ -331,13 +331,15 @@ section.contact div.form div.form-succes {
 
 footer {
 	background-color: #333;
+	padding: 10px 50px;
 }
 
 footer div.author {
 	padding: 20px;
 }
 footer div.author h3 {
-	padding: 10px 0;
+	font-size: 24px;
+	padding: 7px 0;
 	color: white;
 }
 footer div.author p {
@@ -345,25 +347,25 @@ footer div.author p {
 	font-size: 0.8em;
 }
 footer div.author p:nth-of-type(2) {
-	padding-bottom: 15px;
+	padding: 15px 0;
 }
 footer div.links {
-	width: 100%;
-	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 }
 footer div.links div {
-	display: inline-block;
-	width: 30%;
+	display: flex;
+	flex-direction: column;
 }
+
 footer div.links div a {
-	display: inline-block;
-	width: 100%;
-	padding: 15px 20px;
+	margin: 15px 20px;
 	padding-left: 0;
 	text-decoration: underline;
 	text-decoration-color: deepskyblue;
 	color: white;
-	text-align: left;
 }
 
 div.hamburger {
@@ -476,6 +478,7 @@ div.click {
 		width: 75%;
 		transition: 1.3s;
 	}
+
 	section.work
 		div.skills:hover
 		div.professional-skills
@@ -536,7 +539,6 @@ div.click {
 
 	section.services div {
 		font-size: 0;
-		margin-bottom: 70px;
 	}
 	section.services div div.item {
 		width: 25%;
@@ -589,9 +591,13 @@ div.click {
 	section.contact div.visiteus-item span {
 		font-size: 18px;
 	}
+	section.contact div.form div.form-succes {
+		width: 40%;
+	}
 }
+
 @keyframes succes {
-	20% {
+	30% {
 		top: 0;
 	}
 	50% {
@@ -602,5 +608,5 @@ div.click {
 	}
 }
 .animation {
-	animation: succes 2.5s;
+	animation: succes 4s alternate;
 }
