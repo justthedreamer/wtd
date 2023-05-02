@@ -256,7 +256,7 @@ section.services div.services-motto span {
 }
 
 section.contact {
-	background-color: var(--);
+	background-color: var(--primary-color);
 	text-align: center;
 }
 section.contact div.visiteus-item {
@@ -315,6 +315,7 @@ section.contact div.form button {
 	background-size: 200% auto;
 	color: white;
 	border-radius: 10px;
+	cursor: pointer;
 }
 section.contact div.form button:active {
 	text-decoration: underline;
