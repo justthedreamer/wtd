@@ -9,7 +9,6 @@
 html {
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
-	overflow-y: overlay;
 }
 h1,
 h2,
@@ -30,33 +29,34 @@ header {
 	width: 100%;
 	height: 100vh;
 	background-image: url(../images/headerpic.jpg);
-	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	overflow: hidden;
 }
 header nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	width: 100%;
-	font-size: 0;
 }
 header nav a {
-	display: inline-block;
-	background-color: rgba(99, 99, 99, 0.4);
+	width: calc(100% /3);
+	padding: 20px 0;
 	font-size: 16px;
-	width: 50%;
-	text-decoration: none;
 	color: white;
-	padding: 10px;
+	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
+	background-color: rgba(99, 99, 99, 0.4);
 }
 header nav a:nth-of-type(1) {
 	color: deepskyblue;
 }
 header div.headerContent {
 	position: absolute;
-	top: 55%;
+	top: 50%;
 	left: 0;
 	padding: 0 20px;
 	transform: translate(0, -50%);
@@ -213,7 +213,7 @@ section.procesess p {
 	font-weight: 300;
 }
 section.procesess video {
-	height: 50vh;
+	width: 90vw;
 	margin: 20px 0;
 }
 
@@ -332,36 +332,38 @@ section.contact div.form div.form-succes {
 
 footer {
 	background-color: #333;
-	padding: 10px 50px;
+	padding: 10px 10px;
 }
 
-footer div.author {
+footer .author {
 	padding: 20px;
 }
-footer div.author h3 {
+footer .author h3 {
 	font-size: 24px;
 	padding: 7px 0;
 	color: white;
 }
-footer div.author p {
+footer .author p {
 	color: white;
 	font-size: 0.8em;
 }
-footer div.author p:nth-of-type(2) {
+footer .author p:nth-of-type(2) {
 	padding: 15px 0;
 }
-footer div.links {
+
+footer .links {
 	display: flex;
+	width: 100%;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 }
-footer div.links div {
+footer .links div {
 	display: flex;
 	flex-direction: column;
 }
 
-footer div.links div a {
+footer .links div a {
 	margin: 15px 20px;
 	padding-left: 0;
 	text-decoration: underline;
@@ -387,9 +389,13 @@ div.click {
 		color: rgb(238, 238, 238);
 		font-size: 24px;
 	}
-
+	header nav {
+		display: inline-block;
+		font-size: 0;
+	}
 	header nav a {
-		width: calc(100vw / 6);
+		display: inline-block;
+		width: calc(100% / 6);
 		background-color: rgba(55, 55, 55, 0.8);
 		padding: 20px 0;
 		transition: 0.3s linear;
@@ -439,6 +445,7 @@ div.click {
 		width: auto;
 		transition: 0.8s;
 	}
+
 	section.work div.skills:hover div.work-images div.items:nth-of-type(1) img:nth-of-type(1) {
 		right: 60%;
 	}
@@ -537,7 +544,9 @@ div.click {
 		background-color: #222;
 		opacity: 0.7;
 	}
-
+	section.procesess video {
+		width: 50vw;
+	}
 	section.services div {
 		font-size: 0;
 	}
